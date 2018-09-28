@@ -1,11 +1,12 @@
 from base import *
+import dj_database_url
 
 DEBUG = False
 
+# load the ClearDB connection details from the environment variable
 DATABASES = {
     'default': dj_database_url.config('CLEARDB_DATABASE_URL')
     }
-}
 
 # Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_XM1d9ZdgN3EmNQrFAGaSbG9e')
