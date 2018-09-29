@@ -107,3 +107,7 @@ MEDIA_URL = '/media/'
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js",
                                "tinymce", "tinymce.min.js")
+
+# disqus
+DISQUS_API_KEY = "9cVmxRfQIuL62vBaec8H5cG4UKnRSb3MNRqmfneDPQftZvj7rtqrWPOxmjfo8XBN"
+DISQUS_WEBSITE_SHORTNAME = "codeinstitutesocialstaging"
