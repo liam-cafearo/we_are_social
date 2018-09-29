@@ -101,5 +101,9 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
+# required for pictures to show on blog
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js",
                                "tinymce", "tinymce.min.js")
