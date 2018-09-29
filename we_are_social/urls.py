@@ -71,3 +71,4 @@ urlpatterns = [
 if settings.DEBUG:
     import debug_toolbar
     urlpatterns.append(url(r'^debug/', include(debug_toolbar.urls)))
+    urlpatterns.append(url(r'^media/(?P<path>.*)$', serve, {"document_root": settings.MEDIA_ROOT}))
