@@ -36,8 +36,7 @@ INSTALLED_APPS = [
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
-AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend', 'accounts.backends.EmailAuth',)
+AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend', 'accounts.backends.EmailAuth',)
 LOGIN_URL = '/login/'
 
 MIDDLEWARE = [
